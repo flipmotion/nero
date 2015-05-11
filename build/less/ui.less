@@ -1,0 +1,67 @@
+.my {
+	&-btn {
+		transition: @transition;
+		.CalibriR;
+		font-size: 16px;
+		padding: 8px 15px;
+			&.white {
+				background: #fff;
+				color: @blue;
+				border-color: @blue;
+				&:hover,&:focus {
+					background:@blue;
+					color:  #fff;
+					border-color: @blue;
+				}
+			}
+			&.dark {
+				background:  @blue;
+				color: #fff;
+				border-color: @blue;
+				&:hover,&:focus {
+					background:#fff;
+					color:  @blue;
+					border-color: @blue;
+				}
+			}
+			&.transparent {
+				background:  0 0;
+				color: #fff;
+				border-color: #fff;
+				&:hover,&:focus {
+					background:#414651;
+					color: #fff;
+					border-color: #fff;
+				}
+			}
+	}
+	&-input {
+		font-size: 14px;
+		color: @dark;
+		height: auto;
+		min-height: auto;
+		padding:10px 15px;
+		border-color: transparent;
+		box-shadow: none;
+		&:focus {
+			box-shadow: 0px 0px 3px 0px #fff;
+			border-color: transparent;
+		}
+	}
+	
+	&-table {
+		&-row {
+			display: table-row;
+		}
+		&-cell {
+			display:table-cell;
+		}
+	}
+}
+.help-block.with-errors {
+	display: none;
+}
+textarea.my-input {
+	min-height: 100px;
+	resize: none;
+}
