@@ -63,5 +63,28 @@
 }
 textarea.my-input {
 	min-height: 100px;
-	resize: none;
+	resize: vertical;
+}
+.pagination>li>a, .pagination>li>span {
+	border-radius: 5px;
+	margin: 0 3px;
+	color: @dark;
+	border-color: @dark;
+	&:hover,&:focus {
+		background: @blue;
+		color: #fff;
+		border-color: @blue;
+	}
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span,
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+	background: none;
+	border-color: transparent;
+	font-size: 24px;
+	line-height: 14px;
+	color: @dark;
+	&:hover,&:focus {
+		color: @blue;
+	}
+	
 }
