@@ -4,10 +4,30 @@
 		img {
 			width: 100%;
 		}
+		.link-img {
+			a {
+				text-decoration: none;
+				&:after {
+					content: none;
+				}
+				&:hover,&:focus {
+					text-decoration: none;
+				}
+			}
+		}
 		h3 {
 			margin: 0;
 			font-size: 18px;
 			line-height: 24px;
+			a {
+				text-decoration: none;
+				&:after {
+					content: none;
+				}
+				&:hover,&:focus {
+					text-decoration: none;
+				}
+			}
 		}
 		hr {
 			border-color: @blue;
@@ -159,7 +179,7 @@
 }
 /*gallery*/
 	body .lightbox {
-		top: 100px !Important;
+		
 		.lb-image {
 			img {
 				width: 100%;
@@ -392,11 +412,17 @@
 				padding: 20px 40px;
 				
 			}
+			
 		}
 		&:nth-child(2) {
 			& > div:nth-child(2) {
 				width: 100px;
 				padding-right: 0;
+			}
+		}
+		&:nth-child(1) {
+			& > div:nth-child(1) {
+				width: 150px;
 			}
 		}
 		&:nth-child(3) {
