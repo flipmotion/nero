@@ -1,0 +1,141 @@
+.header {
+	&-lvl {
+		&-1 {
+			padding: 10px 0;
+			border-bottom: 1px solid #c1c1c1;
+			ul {
+				padding: 0;
+				list-style-type: none;
+				display: flex;
+				margin: 0;
+				li {
+					color:@dark;
+					position: relative;
+					.CalibriR;
+					font-size: 15px;
+					order: 1;
+					margin-left: 30px;
+					&:after {
+						content: '';
+						.size(@w:1px;@h:20px);
+						position: absolute;
+						left: -15px;
+						top: 2px;
+						background: @blue;
+					}
+					&:first-child {
+						margin-left: 0;
+						&:after {
+							content: none;
+						}
+					}
+					p {
+						margin: 0;
+					}
+					span {
+						font-size:12px;
+						margin-right: 5px;
+						color: @blue;
+						transform: rotateZ(10deg);
+						vertical-align: top;
+						padding-top:4px;
+					}
+				}
+			}
+			a {
+				color: @blue;
+				.CalibriB;
+				text-transform: uppercase;
+				text-decoration: underline;
+				font-size: 15px;
+				&:hover,&:focus {
+					text-decoration: none;
+				}
+			}
+		}
+		&-2 {
+			border-bottom: 1px solid #c1c1c1;
+			padding: 35px 0 35px;
+			h2 {
+				margin: 0;
+				padding-left: 70px;
+				font-size: 27px;
+				display: table;
+				&:before {
+					content: 'Нейрохирург';
+					color: @blue;
+					font-size: 15px;
+					font-weight: 400;
+					display:block;
+					text-align: right;
+				}
+			}
+			.my-btn {
+				margin-left: 15px;
+			}
+			.logo {
+				display: table;
+				width: 80px;
+				height: 120px;
+				background: url(../img/logo.png)center center no-repeat;
+				background-size: contain;
+				margin-top: -30px;
+				margin-bottom: -30px;
+			}
+		}
+		&-3 {
+			border-bottom: 1px solid @blue;
+			box-shadow: 0px 2px 3px 0px rgba(0,0,0,.1);
+			.navbar.navbar-default {
+				background: 0 0;
+				border: none;
+				border-radius: 0;
+				margin: 0;
+				padding: 0;
+			}
+			.nav.navbar-nav {
+				display:table;
+				width: 100%;
+				li {
+					position: relative;
+					text-align: center;
+					display: table-cell;
+					float: none;
+					&:first-child {
+						&:after {
+							content: none;
+						}
+					}
+					&:after {
+						content: '';
+						.size(@w: 1px;@h: 15px);
+						background: #c7c7c7;
+						position:absolute;
+						left: 0px;
+						top: 17px;
+					}
+					a {
+						display:table;
+						margin: 0 auto;
+						.CalibriR;
+						font-size: 15px;
+						color: @dark;
+						text-transform: uppercase;
+						transition: @transition;
+						&:hover,&:focus {
+							color: @blue;
+							border-bottom: 3px solid @blue;
+						}
+					}
+					&.active {
+						a {
+							color: @blue;
+							background: 0 0;
+							border-bottom: 3px solid @blue;
+						}
+					}
+				}
+			}
+		}
+	}
+}

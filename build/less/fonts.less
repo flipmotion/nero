@@ -1,0 +1,130 @@
+// fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300&subset=latin,cyrillic-ext);
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'),
+  url('../fonts/calibri.ttf') format('truetype');
+  font-weight:400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'),
+  url('../fonts/calibril.ttf') format('truetype');
+  font-weight:300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'),
+  url('../fonts/calibrili.ttf') format('truetype');
+  font-weight:300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'),
+  url('../fonts/calibrii.ttf') format('truetype');
+  font-weight:400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'),
+  url('../fonts/calibrib.ttf') format('truetype');
+  font-weight:700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Calibri';
+  src: local('Calibri'),
+  url('../fonts/calibriz.ttf') format('truetype');
+  font-weight:700;
+  font-style: italic;
+}
+.CalibriR {
+	font-family: Calibri, sans-serif;
+	font-weight:400;
+	font-style: normal;
+}
+.CalibriRI {
+	font-family: Calibri, sans-serif;
+	font-weight:400;
+	font-style: italic;
+}
+.CalibriL {
+	font-family: Calibri, sans-serif;
+	font-weight:300;
+	font-style: normal;
+}
+.CalibriLI {
+	font-family: Calibri, sans-serif;
+	font-weight:300;
+	font-style: italic;
+}
+.CalibriB {
+	font-family: Calibri, sans-serif;
+	font-weight:700;
+	font-style: normal;
+}
+.CalibriBI {
+	font-family: Calibri, sans-serif;
+	font-weight:700;
+	font-style: italic;
+}
+.op {
+	font-family: Open Sans, sans-serif;
+}
+body {
+	* {
+		.op;
+	}
+	p {
+		font-size:15px;
+	}
+	h4,
+	h3,
+	h2,
+	h1 {
+		.op;
+		font-weight: 700;
+		color: @dark;
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 25px;
+	}
+	h4 {
+		font-size: 16px;
+		margin: 5px 0;
+	}
+	ol,ul {
+		font-size:15px;
+		padding: 0 0 0 22px;
+		color: @blue;
+		p {
+			color: @dark;
+			margin-bottom: 5px;
+		}
+	}
+	ol li {
+		position: relative;
+		&:after {
+			content: '-';
+			position: absolute;
+			left: -10px;
+			top: 0;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			left: -12px;
+			top: 14px;
+			.size(@w: 4px;@h: 4px);
+			background: #fff;
+		}
+	}
+}
